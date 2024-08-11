@@ -2669,7 +2669,7 @@ input, select, textarea {
 	}
 
 	/* Vertical header styling */
-.vertical-header {
+.side-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -2684,11 +2684,11 @@ input, select, textarea {
     align-items: center;
 }
 
-.vertical-header nav {
+.side-header nav {
     width: 100%;
 }
 
-.vertical-header .nav-tabs {
+.side-header .nav-tabs {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -2697,11 +2697,11 @@ input, select, textarea {
     align-items: center;
 }
 
-.vertical-header .nav-tabs li {
+.side-header .nav-tabs li {
     margin: 20px 0;
 }
 
-.vertical-header .nav-tabs li a {
+.side-header .nav-tabs li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -2713,8 +2713,8 @@ input, select, textarea {
     transition: background-color 0.3s ease;
 }
 
-.vertical-header .nav-tabs li a:hover,
-.vertical-header .nav-tabs li a.active {
+.side-header .nav-tabs li a:hover,
+.side-header .nav-tabs li a.active {
     background-color: #e27689;
 }
 
@@ -2727,12 +2727,22 @@ input, select, textarea {
 
 
 
-#special-box {
+#special-box,
+#experience,
+#involvement,
+#skills,
+#education  {
     position: relative; 
     z-index: 1;
+	padding-top: 40px; 
+    padding-bottom: 10px; 
 }
 
-#special-box::before {
+#special-box::before,
+#experience::before,
+#involvement::before,
+#skills::before,
+#education::before {
     content: "";
     position: absolute;
     top: 0;
@@ -2750,4 +2760,35 @@ input, select, textarea {
     color: #353232; 
     font-weight: bold; 
 	text-align: center;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between categories */
+}
+
+.skill-category {
+    flex: 1 1 calc(50% - 20px); /* Responsive two-column layout */
+    background-color: #f9f9f9; /* Background color for better visibility */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.skill-category h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Slightly larger than default */
+    color: #333; /* Darker text color */
+}
+
+.skill-category ul {
+    list-style-type: disc; /* Bulleted list */
+    margin: 0;
+    padding-left: 20px; /* Indent list items */
+}
+
+.skill-category ul li {
+    margin-bottom: 5px;
 }

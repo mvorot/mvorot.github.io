@@ -27,25 +27,76 @@
 </head>
 <body>
     <div id="background-image"></div>
-    <!-- Vertical Navigation Header -->
-    <header id="side-header" class="vertical-header">
+    <!-- Side Navigation Header -->
+    <!-- <header id="side-header" class="side-header">
         <nav>
             <ul class="nav-tabs">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="experience.html" class="active">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    
+        <div class="bottom">
+            Social Icons
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/mike-vorotnikov/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/mvorot" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="index.html#contact" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+    </header> -->
+   
+<!-- Header -->
+<div id="header">
 
+    <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
+            <h1 id="title">
+                <span class="first-name">Mike</span><br />
+                <span class="last-name">Vorotnikov</span>
+            </h1>
+            <p>Software Enthusiast</p>
+        </div>
+        
+
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Take me home</span></a></li>
+                    <h4>---------------------------------------</h4>
+                    <li><a href="#experience" class="scrolly"><span class="icon solid fa-briefcase">Work Expereince</span></a></li>
+                    <li><a href="#involvement" class="scrolly"><span class="icon solid fa-users">Involvement</span></a></li>
+                    <li><a href="#skills" class="scrolly"><span class="icon solid fa-cogs">Skills</span></a></li>
+                    <li><a href="#education" class="scrolly"><span class="icon solid fa-book">Education</span></a></li>
+                </ul>
+            </nav>
+
+    </div>
+
+    <div class="bottom">
+
+        <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/mike-vorotnikov/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/mvorot" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#contact" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+
+    </div>
+
+</div>
 
     
 
 
     <!-- Content Starts Here -->
     <div class="main-content">
-        <section id="special-box" class="container">
+        <section id="experience" class="container">
             <header>
                 <h2 id="special-header">WORK EXPEREINCE</h2>
             </header>
@@ -106,7 +157,7 @@
         </section>
     
 
-    <section id="special-box" class="container spacing-large">
+    <section id="involvement" class="container spacing-large">
         <header>
             <h2 id="special-header">INVOLVEMENT</h2>
         </header>
@@ -137,37 +188,93 @@
     </section>
 
 
-    <section id="special-box" class="container spacing-large">
+    <section id="skills" class="container spacing-large">
         <header>
             <h2 id="special-header">SKILLS</h2>
         </header>
-        <table>
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Platforms</td>
-                    <td>Windows, macOS</td>
-                </tr>
-                <tr>
-                    <td>Mobile Platforms</td>
-                    <td>iOS, Android OS</td>
-                </tr>
-                <tr>
-                    <td>Programming</td>
-                    <td>Python, C++, Java, MatLab, SQL</td>
-                </tr>
-                <tr>
-                    <td>Tools</td>
-                    <td>Postman, Selenium, Cucumber, MongoDB, JetBrains products, VSC</td>
-                </tr>
-            </tbody>
-        </table>
+    
+        <div class="skills-list">
+            <div class="skill-category">
+                <h3>Platforms</h3>
+                <ul>
+                    <li>Windows</li>
+                    <li>macOS</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Mobile Platforms</h3>
+                <ul>
+                    <li>iOS</li>
+                    <li>Android OS</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>MatLab</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Postman</li>
+                    <li>Selenium</li>
+                    <li>Cucumber</li>
+                    <li>MongoDB</li>
+                    <li>JetBrains products</li>
+                    <li>VSC</li>
+                </ul>
+            </div>
+        </div>
     </section>
+
+
+
+
+    <section id="education" class="container spacing-large">
+        <header>
+            <h2 id="special-header">EDUCATION</h2>
+        </header>
+
+        <article class="item">
+            <header>
+                <h2 class="project-title">BS Computer Science</h2>
+                <h4>University of Florida</h4>
+                <h4>GPA: 4.0</h4>
+                <p><em>December 2024</em></p>
+            </header>
+
+        </article>
+
+        <article class="item">
+            <header>
+                <h2 class="project-title">AA Computer Science</h2>
+                <h4>Santa Fe Community College</h4>
+                <h4>GPA: 4.0</h4>
+                <p><em>December 2022</em></p>
+            </header>
+            
+        </article>
+    </section>
+
+
+
+
 </div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
