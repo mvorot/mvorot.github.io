@@ -141,6 +141,10 @@ input, select, textarea {
 	h3 {
 		font-size: 1.5em;
 	}
+	
+	.project-title {
+		font-weight: bold;
+	}
 
 	header {
 		margin: 0 0 2em 0;
@@ -1755,14 +1759,14 @@ input, select, textarea {
 		}
 
 		.image.avatar48 {
-			width: 48px;
-			height: 48px;
+			width: 80px;
+			height: 80px;
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 80px;
+				height: 80px;
 			}
 
 		.image.fit {
@@ -2107,6 +2111,7 @@ input, select, textarea {
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
+			
 		}
 
 		#logo p {
@@ -2276,7 +2281,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 300px;
+				width: 280px;
 			}
 
 		/* Footer */
