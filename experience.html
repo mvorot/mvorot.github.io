@@ -5,87 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Experience - Mike Vorotnikov</title>
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        /* Image container */
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%; 
+            height: 100%; 
+            z-index: -1; /* Ensures the image stays behind other content */
+            background-image: url("images/coolBackground.png"); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none; 
+        }
+    </style>
+
+
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header id="main-header" class="container">
+    <div id="background-image"></div>
+    <!-- Vertical Navigation Header -->
+    <header id="side-header" class="vertical-header">
         <nav>
             <ul class="nav-tabs">
-                <li><a href="index.html">Mike Vorotnikov</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+
     
+
+
     <!-- Content Starts Here -->
-    <section id="experience" class="container">
-        <article class="item">
+    <div class="main-content">
+        <section id="special-box" class="container">
             <header>
-                <h2 class="project-title">Teaching Assistant</h2>
-                <h3>UF Herbert Wertheim College of Engineering</h3>
-                <h4>Programming Fundamentals 1 | Data Structures and Algorithms</h4>
-                <p><strong>August 2023 – Present</strong></p>
+                <h2 id="special-header">WORK EXPEREINCE</h2>
             </header>
-            <ul>
-                <li>Elevated students’ mastery of advanced programming topics, including graph algorithms and dynamic programming.</li>
-                <li>Provided individualized support to over 70 students, assisting with code debugging and resolving over 95% queries.</li>
-                <li>Enhanced students' programming skills by evaluating coding assignments and offering detailed feedback and guidance.</li>
-            </ul>
-        </article>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Teaching Assistant</h2>
+                    <h4>UF Herbert Wertheim College of Engineering</h4>
+                    <h4>Programming Fundamentals 1 | Data Structures and Algorithms</h4>
+                    <p><em>August 2023 – Present</em></p>
+                </header>
+                <ul>
+                    <li>Elevated students’ mastery of advanced programming topics, including graph algorithms and dynamic programming</li>
+                    <li>Provided individualized support to over 70 students, assisting with code debugging and resolving over 95% queries</li>
+                    <li>Enhanced students' programming skills by evaluating coding assignments and offering detailed feedback and guidance</li>
+                </ul>
+            </article>
 
-        <article class="item">
-            <header>
-                <h2 class="project-title">Program Manager Engineer Intern</h2>
-                <h3>Texas Instruments</h3>
-                <p><strong>May 2024 – August 2024</strong></p>
-            </header>
-            <ul>
-                <li>Implemented an action item database system, reducing task completion time by 75% and streamlining PM processes.</li>
-                <li>Deployed project management methodologies to resolve engineering challenges in semiconductor manufacturing.</li>
-                <li>Prepared a product plan review for space-bound semiconductors, contributing to strategic planning and QA.</li>
-            </ul>
-        </article>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Program Manager Engineer Intern</h2>
+                    <h4>Texas Instruments</h4>
+                    <p><em>May 2024 – August 2024</em></p>
+                </header>
+                <ul>
+                    <li>Implemented an action item database system, reducing task completion time by 75% and streamlining PM processes.</li>
+                    <li>Deployed project management methodologies to resolve engineering challenges in semiconductor manufacturing.</li>
+                    <li>Prepared a product plan review for space-bound semiconductors, contributing to strategic planning and QA.</li>
+                </ul>
+            </article>
 
-        <article class="item">
-            <header>
-                <h2 class="project-title">Software Quality Assurance Analyst</h2>
-                <h3>PlantX</h3>
-                <p><strong>February 2022 – July 2023</strong></p>
-            </header>
-            <ul>
-                <li>Executed 20+ manual test cases per sprint for Shopify-based applications, ensuring cross-platform compatibility.</li>
-                <li>Collaborated with project teams to align testing requirements with business goals, enhancing project efficiency.</li>
-                <li>Maintained and enhanced regression test suites, reducing post-release defects by 30%.</li>
-                <li>Validated and resolved reported bugs, ensuring high product quality and efficient issue resolution.</li>
-            </ul>
-        </article>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Software Quality Assurance Analyst</h2>
+                    <h4>PlantX</h4>
+                    <p><em>February 2022 – July 2023</em></p>
+                </header>
+                <ul>
+                    <li>Executed 20+ manual test cases per sprint for Shopify-based applications, ensuring cross-platform compatibility.</li>
+                    <li>Collaborated with project teams to align testing requirements with business goals, enhancing project efficiency.</li>
+                    <li>Maintained and enhanced regression test suites, reducing post-release defects by 30%.</li>
+                    <li>Validated and resolved reported bugs, ensuring high product quality and efficient issue resolution.</li>
+                </ul>
+            </article>
 
-        <article class="item">
-            <header>
-                <h2 class="project-title">Software Quality Assurance Engineer</h2>
-                <h3>FIS Global</h3>
-                <p><strong>February 2022 – July 2022</strong></p>
-            </header>
-            <ul>
-                <li>Developed test plans and cases in collaboration with business analysts and developers, aligning with project goals.</li>
-                <li>Executed test cases and generated burn down reports for transparent progress tracking and issue resolution.</li>
-                <li>Conducted Exploratory, Functional, and Regression testing across multiple environments.</li>
-                <li>Translated Manual test cases into efficient Automation frameworks using Java, improving 80% testing efficiency.</li>
-            </ul>
-        </article>
-    </section>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Software Quality Assurance Engineer</h2>
+                    <h4>FIS Global</h4>
+                    <p><em>February 2022 – July 2022</em></p>
+                </header>
+                <ul>
+                    <li>Developed test plans and cases in collaboration with business analysts and developers, aligning with project goals.</li>
+                    <li>Executed test cases and generated burn down reports for transparent progress tracking and issue resolution.</li>
+                    <li>Conducted Exploratory, Functional, and Regression testing across multiple environments.</li>
+                    <li>Translated Manual test cases into efficient Automation frameworks using Java, improving 80% testing efficiency.</li>
+                </ul>
+            </article>
+        </section>
+    
 
-    <section id="involvement" class="container">
+    <section id="special-box" class="container spacing-large">
         <header>
-            <h2>Involvement</h2>
+            <h2 id="special-header">INVOLVEMENT</h2>
         </header>
 
         <article class="item">
             <header>
                 <h2 class="project-title">Research Assistant</h2>
-                <h3>HIPPO Lab, University of Florida</h3>
-                <p><strong>Summer 2023</strong></p>
+                <h4>HIPPO Lab, University of Florida</h4>
+                <p><em>Summer 2023</em></p>
             </header>
             <ul>
                 <li>Collaborated with Dr. Olsen to conduct medical data analysis using MatLab, contributing to critical research efforts.</li>
@@ -96,8 +126,8 @@
         <article class="item">
             <header>
                 <h2 class="project-title">Team Leader</h2>
-                <h3>SwampHacks 2023, University of Florida</h3>
-                <p><strong>Spring 2023</strong></p>
+                <h4>SwampHacks 2023, University of Florida</h4>
+                <p><em>Spring 2023</em></p>
             </header>
             <ul>
                 <li>Led the design and development of an application utilizing Python, showcasing leadership and technical skills.</li>
@@ -106,9 +136,10 @@
         </article>
     </section>
 
-    <section id="skills" class="container">
+
+    <section id="special-box" class="container spacing-large">
         <header>
-            <h2>Skills</h2>
+            <h2 id="special-header">SKILLS</h2>
         </header>
         <table>
             <thead>
@@ -137,5 +168,6 @@
             </tbody>
         </table>
     </section>
+</div>
 </body>
 </html>
