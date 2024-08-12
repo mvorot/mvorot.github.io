@@ -2743,7 +2743,8 @@ input, select, textarea {
 #jaws,
 #compiler,
 #parkinson,
-#sudoku  {
+#sudoku,
+#pathfinder  {
     position: relative; 
     z-index: 1;
 	padding-top: 40px; 
@@ -2760,7 +2761,8 @@ input, select, textarea {
 #jaws::before,
 #compiler::before,
 #parkinson::before,
-#sudoku::before {
+#sudoku::before,
+#pathfinder::before {
     content: "";
     position: absolute;
     top: 0;
