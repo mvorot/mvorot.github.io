@@ -219,7 +219,8 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 1400px;
+		width: 100%;
+		padding: 0 15px;
 	}
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -2726,9 +2727,26 @@ input, select, textarea {
 
 
 .main-content {
-    margin-left: 220px; 
-    padding: 20px;
+    margin-left: 220px; /* Default margin for larger screens */
+    padding: 20px; /* Default padding */
 }
+
+/* For tablets and small laptops (width less than 960px) */
+@media screen and (max-width: 960px) {
+    .main-content {
+        margin-left: 0; /* Remove the left margin */
+        padding: 15px; /* Slightly reduce padding */
+    }
+}
+
+/* For mobile devices (width less than 736px) */
+@media screen and (max-width: 736px) {
+    .main-content {
+        margin-left: 0; /* Remove the left margin */
+        padding: 10px; /* Further reduce padding */
+    }
+}
+
 
 
 
