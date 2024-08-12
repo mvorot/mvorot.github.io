@@ -2797,19 +2797,128 @@ input, select, textarea {
 
 .skill-category h3 {
     margin-bottom: 10px;
-    font-size: 1.2em; /* Slightly larger than default */
-    color: #333; /* Darker text color */
+    font-size: 1.2em; 
+    color: #333;  
 }
 
 .skill-category ul {
-    list-style-type: disc; 
-    margin: 0;
-    padding-left: 20px; 
+    list-style-type: none; 
+    padding-left: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .skill-category ul li {
-    margin-bottom: 5px;
+    width: 100px; 
+    height: 100px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+/* Specific bullet images */
+.bullet-windows {
+	width: 150px !important; 
+    height: 150px !important; 
+    background-image: url('icons/windows.png');
+}
+
+.bullet-macos {
+    background-image: url('icons/macOS.png');
+}
+
+.bullet-ios {
+    background-image: url('icons/ios.png');
+}
+
+.bullet-android {
+	width: 180px !important; 
+    height: 180px !important; 
+    background-image: url('icons/android.png');
+}
+
+
+.bullet-python {
+    background-image: url('icons/python.png');
+}
+
+.bullet-cpp {
+    background-image: url('icons/cpp.png');
+}
+
+.bullet-java {
+    background-image: url('icons/java.png');
+}
+
+
+.bullet-matlab {
+    background-image: url('icons/matlab.png');
+}
+
+
+.bullet-sql {
+    background-image: url('icons/sql.png');
+}
+
+.bullet-html {
+    background-image: url('icons/html.png');
+}
+
+.bullet-css {
+    background-image: url('icons/css.png');
+}
+
+
+
+
+.bullet-postman {
+	width: 150px !important; 
+    height: 150px !important; 
+    background-image: url('icons/postman.png');
+}
+
+.bullet-selenium {
+	width: 150px !important; 
+    height: 150px !important; 
+    background-image: url('icons/selenium.png');
+}
+
+.bullet-mongodb {
+	width: 150px !important; 
+    height: 150px !important; 
+    background-image: url('icons/mongoDB.png');
+}
+
+.bullet-jetbrains {
+	width: 150px !important; 
+    height: 150px !important; 
+    background-image: url('icons/jetbrains.png');
+}
+
+.bullet-vsc {
+    background-image: url('icons/vsc.png');
+}
+
+.bullet-jupyter {
+    background-image: url('icons/jupyter.png');
+}
+
+.bullet-cucumber {
+    background-image: url('icons/cucumber.svg');
+}
+
+.bullet-git {
+    background-image: url('icons/git.png');
+}
+
+
+
+
+
+
+
+
 
 
 hr {
