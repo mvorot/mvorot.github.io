@@ -1801,6 +1801,12 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+			.image.big_avatar {
+				max-width: 50%; /* Adjust the percentage to make the image smaller or larger */
+				height: auto; /* Maintains the aspect ratio */
+				display: block;
+				margin: 0 auto; /* Centers the image horizontally */
+			}
 
 /* List */
 
@@ -2820,4 +2826,56 @@ hr {
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Ensures it's treated as a block-level element */
     margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.framed-content {
+    padding: 5px; /* Adds some space between the text and the frame */
+    background-color: rgba(224, 224, 224, 0.807); /* Semi-transparent background */
+    border: none; /* Removes the border */
+    border-radius: 0px; /* Keeps the corners square */
+    display: inline-block; /* Shrinks the container to fit the content */
+    max-width: 40%; /* Restricts the width to 60% of the parent container */
+    margin: 0 auto; /* Centers the block horizontally */
+    text-align: center; /* Centers the text inside the frame */
+}
+
+
+.about-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+    gap: 20px; /* Adds space between the heading and content */
+}
+
+.about-section header {
+    width: 100%; /* Make sure the header spans the full width */
+    margin-bottom: 10px; /* Optional: Adds space between the header and content */
+}
+
+.about-section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.about-section .content p {
+    flex: 1; /* Make the paragraph take up available space */
+    margin: 0; /* Remove default margin */
+}
+
+.about-section .image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.about-section .image img {
+    max-width: 250px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+
+	border: 4px solid #01037d; /* Border thickness and color */
+    padding: 5px; /* Space between the image and the border */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    background-color: #04461f4e; /* Optional: Adds a background color behind the image */
+    box-shadow: 0 4px 8px #01037dca; /* Optional: Adds a subtle shadow */
 }
