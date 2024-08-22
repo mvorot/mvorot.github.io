@@ -222,6 +222,7 @@ input, select, textarea {
 		width: 100%;
 		padding: 0 15px;
 	}
+	
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -1966,7 +1967,7 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #014e65;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1984,7 +1985,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #0190bc;
 		}
 
 		input[type="button"]:active,
@@ -2960,7 +2961,7 @@ hr {
 
 .framed-content {
     padding: 5px; /* Adds some space between the text and the frame */
-    background-color: rgba(224, 224, 224, 0.807); /* Semi-transparent background */
+    background-color: rgb(255, 255, 255); /* Semi-transparent background */
     border: none; /* Removes the border */
     border-radius: 0px; /* Keeps the corners square */
     display: inline-block; /* Shrinks the container to fit the content */
