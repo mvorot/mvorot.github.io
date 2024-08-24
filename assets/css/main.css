@@ -179,7 +179,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #0190bc;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1804,10 +1804,10 @@ input, select, textarea {
 				width: auto;
 			}
 			.image.big_avatar {
-				max-width: 50%; /* Adjust the percentage to make the image smaller or larger */
-				height: auto; /* Maintains the aspect ratio */
+				max-width: 50%; 
+				height: auto; 
 				display: block;
-				margin: 0 auto; /* Centers the image horizontally */
+				margin: 0 auto; 
 			}
 
 /* List */
@@ -1942,7 +1942,7 @@ input, select, textarea {
 			text-align: left;
 			padding: 0.5em 1em 0.5em 1em;
 			color: #fff;
-			background:#e27689;
+			background:#014e65;
 		}
 
 		table thead {
@@ -1985,7 +1985,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #0190bc;
+			background-color: #027da2;
 		}
 
 		input[type="button"]:active,
@@ -2213,7 +2213,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #027da2;
 					}
 
 /* Footer */
@@ -2292,7 +2292,12 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/banner_old.jpg");
+				height: 150px;
+				display: flex;
+				justify-content: center; /* Centers content horizontally */
+				align-items: center; /* Centers content vertically */
+				text-align: right; /* Centers text */
 			}
 
 			#main > section.two {
@@ -2723,7 +2728,7 @@ input, select, textarea {
 
 .side-header .nav-tabs li a:hover,
 .side-header .nav-tabs li a.active {
-    background-color: #e27689;
+    background-color: #014e65;
 }
 
 
@@ -2945,7 +2950,7 @@ input, select, textarea {
 hr {
 	border: none;
     /* border-top: 1px solid #ccc; */
-	border-top: 1px solid #e2768a8c;
+	border-top: 1px solid #027da2;
     margin: 10px 0;
     width: 100%;
 }
@@ -3003,9 +3008,9 @@ hr {
     max-width: 250px; /* Set a fixed width for the image */
     height: auto; /* Maintain aspect ratio */
 
-	border: 4px solid #01037d; /* Border thickness and color */
+	border: 4px solid #014e65; /* Border thickness and color */
     padding: 5px; /* Space between the image and the border */
     border-radius: 8px; /* Optional: Adds rounded corners */
-    background-color: #04461f4e; /* Optional: Adds a background color behind the image */
-    box-shadow: 0 4px 8px #01037dca; /* Optional: Adds a subtle shadow */
+    background-color: #027da2; /* Optional: Adds a background color behind the image */
+    box-shadow: 0 4px 8px rgba(1, 78, 101, 0.6); /* Optional: Adds a subtle shadow */
 }
