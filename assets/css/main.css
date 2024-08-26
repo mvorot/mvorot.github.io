@@ -2785,6 +2785,7 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
+				
 
 	}
 
@@ -3068,37 +3069,42 @@ hr {
 
 .project-image {
     max-width: 75%; 
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures it's treated as a block-level element */
-    margin: 0 auto; /* Center the image horizontally */
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 
 .framed-content {
-    padding: 5px; /* Adds some space between the text and the frame */
-    background-color: rgb(255, 255, 255); /* Semi-transparent background */
-    border: none; /* Removes the border */
-    border-radius: 0px; /* Keeps the corners square */
-    display: inline-block; /* Shrinks the container to fit the content */
-    max-width: 40%; /* Restricts the width to 60% of the parent container */
-    margin: 0 auto; /* Centers the block horizontally */
-    text-align: center; /* Centers the text inside the frame */
+    padding: 5px; 
+    background-color: rgb(255, 255, 255); 
+    border: none;
+    border-radius: 0px; 
+    display: inline-block; 
+    max-width: 40%; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 
 .about-section {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
     align-items: flex-start;
-    gap: 10px; /* Adds space between the heading and content */
+    gap: 10px; 
 	position: relative;
-	padding-top: 5px; /* Reduce padding at the top */
-    padding-bottom: 5px; /* Reduce padding at the bottom */
+	padding-top: 5px;
+    padding-bottom: 5px; 
 }
 
+.special-header {
+    text-align: left; 
+}
+
+
 .about-section header {
-    width: 100%; /* Make sure the header spans the full width */
-    margin-bottom: 0px; /* Optional: Adds space between the header and content */
+    width: 100%; 
+    margin-bottom: 0px; 
 }
 
 .about-section .content {
@@ -3106,30 +3112,69 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-	margin: 0; /* Ensure no margin is applied */
-	padding-right: 260px; /* Ensure no padding is applied */
+	margin: 0; 
+	padding-right: 260px;
 }
 
 .about-section .content p {
-    flex: 1; /* Make the paragraph take up available space */
-    margin: 0; /* Remove default margin */
+    flex: 1; 
+    margin: 0; 
 }
 
 .about-section .image {
-    flex-shrink: 0; /* Prevent the image from shrinking */
-	position: absolute; /* Allows the image to be positioned absolutely within the about-section */
-    top: 0; /* Align the image to the top of the .about-section */
-    right: 0; /* Align the image to the right of the .about-section */
+    flex-shrink: 0; 
+	position: absolute; 
+    top: 0; 
+    right: 0; 
 }
 
-/* TUT  BIG AVAtAR*/
+
 .about-section .image img {
-    max-width: 250px; /* Set a fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; 
+    height: auto; 
 
 	
-    padding: 0px; /* Space between the image and the border */
-    border-radius: 3px; /* Optional: Adds rounded corners */
-    background-color: #027da2; /* Optional: Adds a background color behind the image */
-    box-shadow: 0 4px 8px rgba(1, 78, 101, 0.6); /* Optional: Adds a subtle shadow */
+    padding: 0px; 
+    border-radius: 3px; 
+    background-color: #027da2; 
+    box-shadow: 0 4px 8px rgba(1, 78, 101, 0.6); }
+
+
+/* Mobile layout */
+@media screen and (max-width: 736px) {
+
+	.about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+	.about-section header h2,
+    .about-section .content {
+        text-align: center;
+    }
+
+    .about-section .content {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .about-section .image {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-section .content p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .about-section .image img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
 }
