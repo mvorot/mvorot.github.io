@@ -2879,6 +2879,7 @@ input, select, textarea {
 #experience,
 #involvement,
 #skills,
+#certificates,
 #education,
 #span,
 #swamp,
@@ -2898,6 +2899,7 @@ input, select, textarea {
 #involvement::before,
 #skills::before,
 #education::before,
+#certificates::before,
 #span::before,
 #swamp::before,
 #jaws::before,
@@ -3052,9 +3054,18 @@ input, select, textarea {
     background-image: url('icons/cucumber.svg');
 }
 
+.bullet-mariadb {
+    background-image: url('icons/mariadb.png');
+}
+
+.bullet-qt {
+    background-image: url('icons/qt.png');
+}
+
 .bullet-git {
     background-image: url('icons/git.png');
 }
+
 
 
 
