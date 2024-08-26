@@ -1818,7 +1818,7 @@ input, select, textarea {
 
 	.container.spacing-large {
         max-width: 1400px !important; 
-        padding: 0 20px !important; 
+        padding: 20px 20px !important; 
     }
 
     .container.spacing-large .project-image {
