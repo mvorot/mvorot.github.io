@@ -224,10 +224,47 @@ input, select, textarea {
 	}
 	
 
+		
+	
+	@media screen and (min-width: 961px) {
+
+		.container {
+			width: 2000px;
+
+		}
+		body .main-content {
+			margin-left: 350px; 
+			padding: 20px;
+		}
+
+		.container.spacing-large .project-image {
+			max-width: 50%; 
+			height: auto; 
+			margin: 0 auto; 
+			display: block; 
+		}
+
+
+		
+
+	}
+
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.container {
 				width: 1200px;
+
+			}
+			body .main-content {
+				margin-left: 350px; 
+				padding: 20px;
+			}
+
+			.container.spacing-large .project-image {
+				max-width: 75%; 
+				height: auto;
+				margin: 0 auto; 
+				display: block;
 			}
 
 		}
@@ -237,6 +274,10 @@ input, select, textarea {
 			.container {
 				width: 960px;
 			}
+			.main-content {
+				margin-left: 350px; 
+				padding: 20px;
+			}
 
 		}
 
@@ -244,6 +285,10 @@ input, select, textarea {
 
 			.container {
 				width: 100%;
+			}
+			.main-content {
+				margin-left: 350px; 
+				padding: 20px;
 			}
 
 		}
@@ -759,6 +804,8 @@ input, select, textarea {
 
 		}
 
+
+		
 		@media screen and (min-width: 961px) and (max-width: 1620px) {
 
 			.row {
@@ -1004,6 +1051,9 @@ input, select, textarea {
 
 		}
 
+
+
+		
 		@media screen and (min-width: 961px) and (max-width: 1320px) {
 
 			.row {
@@ -1248,6 +1298,8 @@ input, select, textarea {
 						}
 
 		}
+
+		
 
 		@media screen and (max-width: 960px) {
 
@@ -1739,6 +1791,37 @@ input, select, textarea {
 
 		}
 
+
+		@media screen and (min-width: 1400px) {
+			.row {
+				justify-content: center; 
+			}
+			.row > .col-4 {
+				width: 30% !important; 
+			}
+		}
+
+
+@media screen and (min-width: 2400px) {
+	.row {
+        justify-content: center; 
+    }
+    .row > .col-4 {
+        width: 20% !important; 
+    }
+
+    .item {
+        padding: 10px !important;
+    }
+
+    .item .image.fit img {
+        max-width: 100% !important; 
+        height: auto !important; 
+    }
+}
+
+		
+
 /* Sections/Article */
 
 	section, article {
@@ -2000,11 +2083,11 @@ input, select, textarea {
 
 .item {
     box-shadow: 0 4px 8px rgba(50, 7, 238, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; /* Adds rounded corners */
-    background-color: #fff; /* Ensures the box has a white background */
+    border-radius: 8px; 
+    background-color: #fff; 
     margin-bottom: 40px;
-    padding: 20px; /* Adds some padding inside the box */
-    transition: box-shadow 0.3s ease; /* Adds a smooth transition effect */
+    padding: 20px; 
+    transition: box-shadow 0.3s ease; 
 }
 
 	.item:hover {
@@ -2255,10 +2338,10 @@ input, select, textarea {
 		#main > section {
 			margin: 0;
 			overflow: hidden;
-			padding: 4em 0;
+			padding: 1em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
+			/* background-image: url("images/overlay.png"); */
 		}
 
 			#main > section.dark {
@@ -2285,19 +2368,24 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				/* padding: 10em 0; */
 				background-size: cover;
 				background-position: center center;
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner_old.jpg");
-				height: 150px;
+				min-height: 0px;
+				padding: 1em 0; /* Reduce padding further as needed */
 				display: flex;
-				justify-content: center; /* Centers content horizontally */
-				align-items: center; /* Centers content vertically */
-				text-align: right; /* Centers text */
+				justify-content: center; 
+				align-items: center; 
+				text-align: center; 
+				color: black;
+				background-color: white;
+				box-sizing: border-box; 
+				font-size: 22px; 
+				line-height: 1; 
+				margin: 0;
 			}
 
 			#main > section.two {
@@ -2344,19 +2432,37 @@ input, select, textarea {
 
 /* Normal */
 
-	@media screen and (min-width: 961px) and (max-width: 1620px) {
+@media screen and (min-width: 961px) and (max-width: 1620px) {
 
-		/* Main */
+    /* Main */
 
-			#main > section {
-				padding: 3em 0;
-			}
+    #main > section {
+        padding: 2em 0; /* Reduced padding */
+    }
 
-			#main section.cover {
-				padding: 5em 0;
-			}
+    #main section.cover {
+        padding: 3em 0; /* Reduced padding for cover sections */
+    }
 
-	}
+    /* Specific adjustment for section.one */
+    #main > section.one {
+        padding: 1em 0; /* Further reduce padding for section.one */
+        font-size: 20px; /* Optional: Adjust font size to reduce height */
+        line-height: 1;  /* Adjust line height for better control of text spacing */
+    }
+
+    /* Additional adjustment for headers inside section.one */
+    #main > section.one header h2,
+    #main > section.one header h3 {
+        margin-bottom: 0.5em; /* Reduce margin below headers */
+    }
+	.main-content {
+		/* nothing changes when I make changes */
+        margin-left: 260px; /* Increased margin to ensure no overlap with navigation */
+        padding: 20px; /* Maintain padding */
+    }
+}
+
 
 /* Narrow */
 
@@ -2627,6 +2733,7 @@ input, select, textarea {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+		
 
 		/* Basic */
 
@@ -2732,24 +2839,27 @@ input, select, textarea {
 }
 
 
-.main-content {
-    margin-left: 220px; /* Default margin for larger screens */
-    padding: 20px; /* Default padding */
-}
+
 
 /* For tablets and small laptops (width less than 960px) */
 @media screen and (max-width: 960px) {
+    #main > section.one {
+        padding: 1em 0; /* Reduced padding for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+        line-height: 0.5; /* Adjust line height */
+    } /* Closing brace added here */
+
     .main-content {
-        margin-left: 0; /* Remove the left margin */
+        margin-left: 300px; /* Remove the left margin */
         padding: 15px; /* Slightly reduce padding */
     }
 }
 
+
 /* For mobile devices (width less than 736px) */
 @media screen and (max-width: 736px) {
     .main-content {
-        margin-left: 0; /* Remove the left margin */
-        padding: 10px; /* Further reduce padding */
+        margin-left: 0; 
     }
 }
 
@@ -2980,12 +3090,15 @@ hr {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start;
-    gap: 20px; /* Adds space between the heading and content */
+    gap: 10px; /* Adds space between the heading and content */
+	position: relative;
+	padding-top: 5px; /* Reduce padding at the top */
+    padding-bottom: 5px; /* Reduce padding at the bottom */
 }
 
 .about-section header {
     width: 100%; /* Make sure the header spans the full width */
-    margin-bottom: 10px; /* Optional: Adds space between the header and content */
+    margin-bottom: 0px; /* Optional: Adds space between the header and content */
 }
 
 .about-section .content {
@@ -2993,6 +3106,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+	margin: 0; /* Ensure no margin is applied */
+	padding-right: 260px; /* Ensure no padding is applied */
 }
 
 .about-section .content p {
@@ -3002,15 +3117,19 @@ hr {
 
 .about-section .image {
     flex-shrink: 0; /* Prevent the image from shrinking */
+	position: absolute; /* Allows the image to be positioned absolutely within the about-section */
+    top: 0; /* Align the image to the top of the .about-section */
+    right: 0; /* Align the image to the right of the .about-section */
 }
 
+/* TUT  BIG AVAtAR*/
 .about-section .image img {
     max-width: 250px; /* Set a fixed width for the image */
     height: auto; /* Maintain aspect ratio */
 
-	border: 4px solid #014e65; /* Border thickness and color */
-    padding: 5px; /* Space between the image and the border */
-    border-radius: 8px; /* Optional: Adds rounded corners */
+	
+    padding: 0px; /* Space between the image and the border */
+    border-radius: 3px; /* Optional: Adds rounded corners */
     background-color: #027da2; /* Optional: Adds a background color behind the image */
     box-shadow: 0 4px 8px rgba(1, 78, 101, 0.6); /* Optional: Adds a subtle shadow */
 }
