@@ -2887,7 +2887,8 @@ input, select, textarea {
 #compiler,
 #parkinson,
 #sudoku,
-#pathfinder  {
+#pathfinder,
+#tictactoe {
     position: relative; 
     z-index: 1;
 	padding-top: 40px; 
@@ -2906,7 +2907,8 @@ input, select, textarea {
 #compiler::before,
 #parkinson::before,
 #sudoku::before,
-#pathfinder::before {
+#pathfinder::before,
+#tictactoe::before {
     content: "";
     position: absolute;
     top: 0;
